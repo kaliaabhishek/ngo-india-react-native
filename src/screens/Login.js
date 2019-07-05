@@ -18,7 +18,7 @@ export default class Login extends Component {
   handleTextChange = (text, name) => this.setState({ [name]: text });
 
   handleSubmit = () => {
-    alert("button pressed");
+    this.props.navigation.navigate("App");
   };
 
   render() {

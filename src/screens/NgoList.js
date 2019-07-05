@@ -1,13 +1,6 @@
 import React, { Component } from "react";
-import { View, Text, ScrollView, StyleSheet } from "react-native";
-import {
-  Avatar,
-  Button,
-  Card,
-  Title,
-  Paragraph,
-  FAB
-} from "react-native-paper";
+import { View, ScrollView, StyleSheet } from "react-native";
+import { Avatar, Button, Card, FAB } from "react-native-paper";
 import { ngos } from "../utils/dummyData";
 
 export default class NgoList extends Component {

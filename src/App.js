@@ -9,6 +9,4 @@ const App = () => {
   return <AppContainer />;
 };
 
-const styles = StyleSheet.create({});
-
 export default App;
