@@ -24,3 +24,41 @@ export const ngos = [
     description: "We support people who listen bad rock music like Nickleback"
   }
 ];
+
+export const events = [
+  {
+    title: "Womens Dinner Meet",
+    when: "03-06-2019",
+    attending: Math.floor(Math.random) * 10000
+  },
+  {
+    title: "Womens Dinner Meet",
+    when: "03-06-2019",
+    attending: Math.floor(Math.random) * 10000
+  },
+  {
+    title: "Womens Dinner Meet",
+    when: "03-06-2019",
+    attending: Math.floor(Math.random) * 10000
+  },
+  {
+    title: "Womens Dinner Meet",
+    when: "03-06-2019",
+    attending: Math.floor(Math.random) * 10000
+  },
+  {
+    title: "Womens Dinner Meet",
+    when: "03-06-2019",
+    attending: Math.floor(Math.random) * 10000
+  },
+  {
+    title: "Womens Dinner Meet",
+    when: "03-06-2019",
+    attending: Math.floor(Math.random) * 10000
+  },
+  {
+    title: "Womens Dinner Meet",
+    when: "03-06-2019",
+    attending: Math.floor(Math.random) * 10000
+  }
+];

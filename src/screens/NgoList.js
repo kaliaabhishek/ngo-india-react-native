@@ -12,7 +12,7 @@ import { ngos } from "../utils/dummyData";
 
 export default class NgoList extends Component {
   static navigationOptions = {
-    headerTitle: "NGOs"
+    headerTitle: "NGO India"
   };
   constructor(props) {
     super(props);
@@ -21,6 +21,10 @@ export default class NgoList extends Component {
 
   handleAdd = () => {
     this.props.navigation.navigate("AddNgo");
+  };
+
+  handleEventNavigation = () => {
+    this.props.navigation.navigate("Events");
   };
 
   handleSelect = ngo => {
@@ -50,7 +54,12 @@ export default class NgoList extends Component {
             );
           })}
         </ScrollView>
-        <FAB style={styles.fab} icon="add" onPress={this.handleAdd} />
+        <FAB style={styles.fab1} icon="add" onPress={this.handleAdd} />
+        <FAB
+          style={styles.fab2}
+          icon="event-note"
+          onPress={this.handleEventNavigation}
+        />
       </View>
     );
   }
@@ -61,10 +70,16 @@ const styles = StyleSheet.create({
     margin: 10,
     elevation: 2
   },
-  fab: {
+  fab1: {
     position: "absolute",
     margin: 20,
     right: 0,
     bottom: 0
+  },
+  fab2: {
+    position: "absolute",
+    margin: 20,
+    right: 0,
+    bottom: 70
   }
 });
