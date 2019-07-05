@@ -3,42 +3,36 @@ import { View, Text, StyleSheet } from "react-native";
 import { TextInput, Button } from "react-native-paper";
 import axios from "axios";
 
-export default class Login extends Component {
+export default class AddNgo extends Component {
   static navigationOptions = {
-    headerTitle: "Login to NGO India"
+    headerTitle: "Add NGO"
   };
   constructor(props) {
     super(props);
     this.state = {
-      email: "",
-      password: ""
+      name: "",
+      description: ""
     };
   }
 
-  handleTextChange = (text, name) => this.setState({ [name]: text });
-
-  handleSubmit = () => {
-    alert("button pressed");
-  };
-
   render() {
-    const { email, password } = this.state;
+    const { name, description } = this.state;
     return (
       <View style={styles.container}>
         <TextInput
-          label="Email"
-          onChangeText={text => this.handleTextChange(text, "email")}
-          value={email}
+          label="NGO Name"
+          onChangeText={text => this.handleTextChange(text, "name")}
+          value={name}
           style={styles.textField}
         />
         <TextInput
-          label="Password"
-          onChangeText={text => this.handleTextChange(text, "password")}
-          value={password}
+          label="NGO Description"
+          onChangeText={text => this.handleTextChange(text, "description")}
+          value={description}
           style={styles.textField}
         />
         <Button mode="contained" onPress={this.handleSubmit}>
-          Log In
+          Add NGO
         </Button>
       </View>
     );
